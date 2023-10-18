@@ -736,3 +736,23 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.core.resources.IResou
 
 !ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-10-18 11:45:38.207
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.egit.core 4 0 2023-10-18 11:52:37.423
+!MESSAGE An exception occurred during push on URI https://github.com/hardikag233/amdcs.demo1.git: https://github.com/hardikag233/amdcs.demo1.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/hardikag233/amdcs.demo1.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:696)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:638)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:138)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1537)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-10-18 11:52:37.426
+!MESSAGE Can't connect to any repository: https://github.com/hardikag233/amdcs.demo1.git (https://github.com/hardikag233/amdcs.demo1.git: not authorized)
+
+!ENTRY org.eclipse.equinox.security 1 0 2023-10-18 11:55:12.985
+!MESSAGE New keyring password generated. 
